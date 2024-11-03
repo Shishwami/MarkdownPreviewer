@@ -65,7 +65,7 @@ function App() {
           <textarea id="editor" onChange={updateMarkdown} value={markdown}></textarea>
         </div>
         <div id="preview-container">
-          <div id="preview">{markdown}</div>
+          <div id="preview" dangerouslySetInnerHTML={{ __html: marked(markdown) }}></div>
         </div>
       </div>
     </div>
