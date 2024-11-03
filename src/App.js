@@ -8,6 +8,9 @@ function App() {
         <div id="editor-container">
           <textarea id="editor"></textarea>
         </div>
+        <div id="preview-container">
+          <div id="preview"></div>
+        </div>
       </div>
     </div>
   );
