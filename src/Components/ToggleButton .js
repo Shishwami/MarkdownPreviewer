@@ -11,13 +11,16 @@ function ToggleButton({ id, name }) {
 
         } else {
             setEnabled(true);
-            document.getElementById(id).style.display = "block";
+            document.getElementById(id).style.display = "flex";
         }
 
     }
 
     return (
-        <button onClick={toggle}>{name}</button>
+        <button
+            onClick={toggle}
+            className={`btn-${enabled ? "enabled" : "disabled"}`}
+        >{name}</button>
     );
 }
 export default ToggleButton;
