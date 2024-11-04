@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
-import { marked } from 'marked';
 import Footer from './Components/Footer';
 import Editor from './Components/Editor';
+import Preview from './Components/Preview';
+import ToggleButton from './Components/ToggleButton ';
 
 class MarkdownData {
   static defaultMarkdown = `# Welcome to my React Markdown Previewer!
@@ -64,12 +65,11 @@ function App() {
     <div className="App">
       <div id="wrapper">
         <Editor updateMarkdown={updateMarkdown} markdown={markdown} />
-        <div id="preview-container">
-          <div id="preview" dangerouslySetInnerHTML={{ __html: marked(markdown) }}></div>
-        </div>
+        <Preview markdown={markdown} />
         <Footer >
           <div id="btn-container">
-
+            <ToggleButton name={"Editor"} id={"editor-container"} />
+            <ToggleButton name={"Preview"} id={"preview-container"}/>
           </div>
         </Footer>
       </div>
