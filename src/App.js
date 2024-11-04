@@ -3,6 +3,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import { marked } from 'marked';
 import Footer from './Components/Footer';
+import Editor from './Components/Editor';
 
 class MarkdownData {
   static defaultMarkdown = `# Welcome to my React Markdown Previewer!
@@ -62,15 +63,13 @@ function App() {
   return (
     <div className="App">
       <div id="wrapper">
-        <div id="editor-container">
-          <textarea id="editor" onChange={updateMarkdown} value={markdown}></textarea>
-        </div>
+        <Editor updateMarkdown={updateMarkdown} markdown={markdown} />
         <div id="preview-container">
           <div id="preview" dangerouslySetInnerHTML={{ __html: marked(markdown) }}></div>
         </div>
         <Footer >
           <div id="btn-container">
-            
+
           </div>
         </Footer>
       </div>
