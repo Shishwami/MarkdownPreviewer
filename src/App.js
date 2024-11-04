@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import { marked } from 'marked';
+import Footer from './Components/Footer';
 
 class MarkdownData {
   static defaultMarkdown = `# Welcome to my React Markdown Previewer!
@@ -67,6 +68,11 @@ function App() {
         <div id="preview-container">
           <div id="preview" dangerouslySetInnerHTML={{ __html: marked(markdown) }}></div>
         </div>
+        <Footer >
+          <div id="btn-container">
+            
+          </div>
+        </Footer>
       </div>
     </div>
   );
