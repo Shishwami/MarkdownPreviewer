@@ -1,7 +1,7 @@
 function Editor({ updateMarkdown, markdown }) {
     return (
         <div id="editor-container" className="box">
-            <h1>Editor</h1>
+            <h1 className="title">Editor</h1>
             <textarea id="editor" onChange={updateMarkdown} value={markdown}></textarea>
         </div>
     );
