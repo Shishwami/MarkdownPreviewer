@@ -24,3 +24,4 @@ yarn-error.log*
 src/setupTests.js
 src/reportWebVitals.js
 src/App.test.js
+src/App.min.css
