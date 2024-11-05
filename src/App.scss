@@ -13,20 +13,27 @@ body {
     --color1: #ffb64f;
     --color2: #25083d;
     --color3: rgb(81, 53, 97);
+    --color4: rgb(54, 30, 61);
 }
 
 body {
     background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 #wrapper {
     width: 100%;
-    height: 100vh;
-
+    min-height: 100vh;
+    max-height: 100vh;
+    
     #main-content {
         display: flex;
         width: 100%;
-        height: 100%;
+        height: fit-content;
+        overflow: auto;
 
         >.box+.box {
             flex: 1 1 100%;
@@ -36,8 +43,8 @@ body {
             margin: 15px;
             padding: 5px;
             border-radius: 10px;
-            border: 5px solid var(--color2);
-            height: calc(100% - 120px);
+            box-shadow: -15px 15px var(--color4);
+            min-height: 70vh;
         }
     }
 
@@ -50,8 +57,7 @@ body {
 
         color: var(--color1);
         background-color: var(--color2);
-        box-shadow: -8px 8px var(--color1);
-
+        border: 5px solid var(--color1);
 
         textarea {
             color: var(--color1);
@@ -71,13 +77,14 @@ body {
         display: flex;
         flex-direction: column;
         background-color: var(--color1);
-        box-shadow: -8px 8px var(--color2);
+        border: 5px solid var(--color2);
 
         .title {
             color: var(--color2);
         }
 
         #preview {
+            flex: 1;
             overflow: auto;
             padding: 10px;
             border: 1px solid var(--color2);
@@ -93,21 +100,24 @@ body {
     }
 
     #footer {
-        position: fixed;
+        position: sticky;
         bottom: 0;
         left: 0;
         z-index: 10;
+
 
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         width: 100%;
+        max-height: 53px !important;
+        min-height: 53px !important;
+
         background-color: #f1f1f1;
-        height: fit-content;
 
         background-color: var(--color3);
-        border-top: 5px solid var(--color1);
+        border-bottom: 5px solid var(--color1);
 
         a,
         p {
@@ -115,9 +125,11 @@ body {
             color: var(--color1);
             text-decoration: none;
         }
-        a{
+
+        a {
             font-weight: 700;
         }
+
         p {
             padding: 0 10px;
         }
@@ -149,6 +161,20 @@ body {
             color: var(--color2);
             background-color: var(--color1);
         }
+    }
+}
+
+@media (max-width: 1000px) {
+    #main-content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+
+        .box {
+            width: 80%;
+            margin: 15px auto !important;
+        }
+
     }
 }
 
