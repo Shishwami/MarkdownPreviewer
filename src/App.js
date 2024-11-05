@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Footer from './Components/Footer';
 import Editor from './Components/Editor';
 import Preview from './Components/Preview';
