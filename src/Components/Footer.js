@@ -3,7 +3,6 @@ function Footer({ children }) {
         <footer id="footer">
             {children}
             <p>by <a href="https://github.com/Shishwami">Shishwami</a></p>
-            <div></div>
         </footer>
     );
 }
