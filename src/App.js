@@ -63,16 +63,17 @@ function App() {
   return (
     <div className="App">
       <div id="wrapper">
-        <div id="main-content">
-          <Editor updateMarkdown={updateMarkdown} markdown={markdown} />
-          <Preview markdown={markdown} />
-        </div>
         <Footer >
           <div id="btn-container">
             <ToggleButton name={"Editor"} id={"editor-container"} />
             <ToggleButton name={"Preview"} id={"preview-container"} />
           </div>
         </Footer>
+        <div id="main-content">
+          <Editor updateMarkdown={updateMarkdown} markdown={markdown} />
+          <Preview markdown={markdown} />
+        </div>
+
       </div>
     </div>
   );
