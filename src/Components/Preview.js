@@ -13,6 +13,8 @@ function Preview({ markdown }) {
     }, [markdown]); 
 
     marked.setOptions({
+        gfm: true,
+        breaks: true,
         highlight: (code, lang) => {
             const language = lang || 'plaintext';
             return hljs.highlight(language, code).value;
