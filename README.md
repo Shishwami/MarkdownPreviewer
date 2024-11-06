@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Markdown Previewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Markdown previewer app inspired by [FreeCodeCamp's Markdown Previewer](https://markdown-previewer.freecodecamp.rocks/). It was built with a focus on fulfilling specific user stories to ensure functional completeness and responsiveness.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+The app includes a markdown editor and a previewer section that dynamically renders the markdown syntax as HTML. It uses the `marked` library to parse markdown and `Highlight.js` for syntax highlighting in code blocks, enhancing the readability of code snippets.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Live Preview**: As you type in the editor, the previewer section displays the rendered HTML in real-time.
+- **GitHub-Flavored Markdown**: Supports GitHub-flavored markdown syntax, including headings, links, code blocks, lists, and more.
+- **Syntax Highlighting**: Uses Highlight.js to apply syntax highlighting for code blocks.
+- **Initial Content**: When loaded, the editor includes a default set of markdown examples, covering essential elements like headings, lists, code, and more.
+- **Optional Line Break Handling**: Interprets carriage returns and can render them as `<br>` elements.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React**: Frontend framework for a responsive and modular UI.
+- **Sass**: For styling the app, enhancing CSS with variables and nested syntax.
+- **Marked.js**: JavaScript library for parsing markdown into HTML.
+- **Highlight.js**: JavaScript library for syntax highlighting in code blocks.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+1. Clone this repository.
+2. Run `npm install` to install dependencies.
+3. Run `npm start` to launch the app locally.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Alternatively, you can view the live version of the project at [this link](https://shishwami.github.io/MarkdownPreviewer/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Type in the **Editor** section.
+2. Watch the **Preview** update with the rendered HTML instantly, with code blocks automatically highlighted.
 
-### `npm run eject`
+## Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [React](https://reactjs.org/)
+- [Sass](https://sass-lang.com/)
+- [Marked.js](https://cdnjs.com/libraries/marked)
+- [Highlight.js](https://highlightjs.org/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Credits
+This Markdown Previewer project is part of the [FreeCodeCamp Frontend Certification](https://www.freecodecamp.org/learn/front-end-libraries/) course. It was completed as one of the required projects in the curriculum.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+FreeCodeCamp (FCC) is a nonprofit organization that offers a comprehensive web development curriculum and certifications. The Frontend Certification focuses on frontend libraries and frameworks like React, and it covers various topics including HTML, CSS, JavaScript, and more.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Learn more about FreeCodeCamp and their educational programs on their official website: [https://www.freecodecamp.org/](https://www.freecodecamp.org/)
